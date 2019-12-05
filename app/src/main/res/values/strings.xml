@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MT</string>
+    <string-array name="Car_names">
+        <item>Please choose a car</item>
+        <item>Lexus LC</item>
+        <item>BMW i8</item>
+        <item>Audi</item>
+        <item>Jaguar F-Type</item>
+        <item>Ford F-150 Raptor</item>
+        <item>McLaren Senna</item>
+
+    </string-array>
+
+    <string-array name="Rent">
+        <item>$100</item>
+        <item>$120</item>
+        <item>$110</item>
+        <item>$130</item>
+        <item>$140</item>
+        <item>$135</item>
+        <item>$150</item>
+    </string-array>
+
+</resources>

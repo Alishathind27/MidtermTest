@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Car Rent Service"
+      android:gravity="center"
+      android:textSize="30sp"
+      android:layout_marginTop="10dp" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+    <Spinner
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:id="@+id/choose_car"
+    android:gravity="center"
+    android:spinnerMode="dropdown"
+    android:entries="@array/Car_names"/>
+
+  <EditText
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:hint="Daily Rent"
+    android:id="@+id/daily_rent"
+      android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"/>
+  </LinearLayout>
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:text="How many days you want to rent ?"
+    android:layout_marginTop="20dp"
+      android:layout_marginLeft="20dp"
+    />
+
+  <TextView
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:hint="Days"
+    android:layout_marginLeft="80dp"
+      android:layout_marginTop="20dp"
+    android:id="@+id/days_no"/>
+  </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+  <SeekBar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+      android:layout_marginLeft="20dp"
+    android:id="@+id/Show_days" />
+
+</LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+  <TextView
+   android:layout_height="match_parent"
+   android:layout_width="wrap_content"
+   android:text="Driver's Age"
+     android:textSize="20sp"
+   android:layout_marginLeft="20dp"
+   android:layout_marginTop="20dp"/>
+
+
+   <RadioGroup
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="20dp"
+       android:layout_marginLeft="40dp"
+     android:id="@+id/age">
+
+     <RadioButton
+       android:layout_height="match_parent"
+       android:layout_width="wrap_content"
+       android:text="less than 20"
+         android:onClick=""
+       android:id="@+id/rd1"
+         />
+     <RadioButton
+       android:layout_height="match_parent"
+       android:layout_width="match_parent"
+       android:text="Between 21 and 60"
+         android:onClick="calalculate"
+       android:id="@+id/rd2"
+        />
+     <RadioButton
+       android:layout_height="match_parent"
+       android:layout_width="wrap_content"
+       android:text="Above 60"
+         android:onClick="calalculate"
+       android:id="@+id/rd3"
+         />
+
+   </RadioGroup>
+
+   </LinearLayout>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Options"
+      android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:textSize="20sp"/>
+
+  <LinearLayout
+
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginTop="10dp">
+
+
+  <CheckBox
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:id="@+id/checkbox1"
+      android:layout_marginLeft="20dp"
+      android:text="GPS"/>
+  <CheckBox
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/checkbox2"
+      android:text="Child seat"
+      android:layout_marginLeft="20dp"/>
+  <CheckBox
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/checkbox3"
+      android:text="Unlimited millage"
+      android:layout_marginLeft="20dp"/>
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount"
+        android:textSize="20sp"
+        android:id="@+id/amount"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+<!--        android:background="#fff"/>-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total amount"
+        android:textSize="20sp"
+        android:id="@+id/totalamount"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"/>
+<!--        android:background=""/>-->
+  </LinearLayout>
+
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="View Detail"
+      android:layout_marginTop="20dp"
+      android:layout_gravity="center"
+      android:id="@+id/btn"/>
+
+</LinearLayout>
