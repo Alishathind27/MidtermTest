@@ -145,6 +145,7 @@ public class MainActivity extends AppCompatActivity {
                        Totalamount.setText(String.valueOf(tot));
 
                        break;
+                       //jiojio
                }
 
            }
